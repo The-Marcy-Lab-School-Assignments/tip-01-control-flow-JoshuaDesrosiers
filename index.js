@@ -7,7 +7,26 @@ Below 40 → "Wear a heavy coat, scarf, and boots."
 */
 
 const outfitPicker = (temp) => {
-  // ✍️ Write your code here
+console.log('')
+console.log('it is '+temp+' deg')
+if(temp>=80){
+console.log('Wear shorts and a t-shirt.')
+}else if(temp>=60){
+console.log("Wear jeans and a light jacket.")
+}
+else if(temp>=40){
+console.log("Wear a sweater and pants.")
+}
+else{
+console.log("Wear a heavy coat, scarf, and boots.")
+}
+console.log('----------------------------------')
+console.log('')
+
 };
+for(let num of [80,60,40,20]){
+
+outfitPicker(num)
+}
 
 //Test your function below

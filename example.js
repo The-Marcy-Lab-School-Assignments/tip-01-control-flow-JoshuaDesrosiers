@@ -9,17 +9,19 @@ const checkValue = (value) => {
 
   console.log("--------------------------");
 };
-
+// for(let item of [1,0,-0,-1,[],{},'',"",NaN]){
+// checkValue(item)
+// }
 // 🧪 Test with different data types
-// checkValue("Hello"); // String (truthy)
-//checkValue("");           // Empty string (falsy)
-//checkValue(42);            // Number (truthy)
-// checkValue(0); // Number zero (falsy)
-//checkValue(true);          // Boolean (truthy)
-//checkValue(false);         // Boolean (falsy)
-//checkValue(undefined);     // Undefined (falsy)
-//checkValue(null);          // Null (falsy)
-//checkValue(NaN);            // Not-a-Number (falsy)
+checkValue("Hello"); // String (truthy)
+checkValue("");           // Empty string (falsy)
+checkValue(42);            // Number (truthy)
+checkValue(0); // Number zero (falsy)
+checkValue(true);          // Boolean (truthy)
+checkValue(false);         // Boolean (falsy)
+checkValue(undefined);     // Undefined (falsy)
+checkValue(null);          // Null (falsy)
+checkValue(NaN);            // Not-a-Number (falsy)
 
 // This function takes a numeric test score (0–100)
 // and returns the corresponding letter grade (A–F)
